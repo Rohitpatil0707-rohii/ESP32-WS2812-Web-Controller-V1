@@ -42,7 +42,21 @@ A local Wi-Fi based ESP32 LED controller for WS2812 RGB LEDs using a webpage int
 
 ## Project Description
 
-This project uses an ESP32 as a Wi-Fi webserver. A phone or laptop connected to the same Wi-Fi network can open the ESP32 webpage and control the WS2812 RGB LED.
+## Important Note
+
+This project is designed for local Wi-Fi network use.
+The ESP32 hosts a local HTTP webpage, so it should not be directly exposed to the public internet using router port forwarding.
+
+For remote control, use a secure IoT platform such as Blynk, MQTT cloud, VPN, Home Assistant, or ESP RainMaker.
+
+## Author
+
+**Rohit Patil**
+
+Embedded Software Developer | IoT & ESP32 Projects
+
+GitHub: [Rohitpatil0707-rohii](https://github.com/Rohitpatil0707-rohii)
+
 
 The project is useful for learning ESP32 Wi-Fi, embedded webserver design, OTA update, persistent storage, and IoT-style device control.
 
