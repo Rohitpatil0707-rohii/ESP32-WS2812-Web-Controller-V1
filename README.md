@@ -1,123 +1,55 @@
-\# ESP32 WS2812 Web LED Controller V1
-
-
+# ESP32 WS2812 Web LED Controller V1
 
 A local Wi-Fi based ESP32 LED controller for WS2812 RGB LEDs using a webpage interface.
 
+## Webpage UI
 
+![ESP32 Webpage UI](Images/webpage-ui.png.png)
 
-\## Features
+## Features
 
+- ESP32 local webserver
+- Webpage based LED control
+- RGB color control
+- Brightness control
+- Animation modes
+- Speed control
+- OTA wireless update support
+- Wi-Fi setup page
+- Custom login page
+- Online/offline status
+- Push button mode control
+- Long-press factory reset
 
+## Hardware Used
 
-\* ESP32 local webserver
+- ESP-WROOM-32 / ESP32 DevKit
+- WS2812 RGB LED module or strip
+- Push button
+- 330 ohm resistor for LED data line
+- 10k pulldown resistor for LED data line
+- 5V power supply
 
-\* Webpage based LED control
+## Pin Connection
 
-\* RGB color control
+| ESP32 Pin | Connection |
+|---|---|
+| GPIO27 | WS2812 DIN |
+| VIN / 5V | WS2812 VCC |
+| GND | WS2812 GND |
+| GPIO25 | Push Button |
+| GND | Push Button |
 
-\* Brightness control
-
-\* Animation modes
-
-\* Speed control
-
-\* OTA wireless update support
-
-\* Wi-Fi setup page
-
-\* Custom login page
-
-\* Online/offline status
-
-\* Push button mode control
-
-\* Long-press factory reset
-
-
-
-\## Hardware Used
-
-
-
-\* ESP-WROOM-32 / ESP32 DevKit
-
-\* WS2812 RGB LED module or strip
-
-\* Push button
-
-\* 330 ohm resistor for LED data line
-
-\* 10k pulldown resistor for LED data line
-
-\* 5V power supply
-
-
-
-\## Pin Connection
-
-
-
-| ESP32 Pin | Connection  |
-
-| --------- | ----------- |
-
-| GPIO27    | WS2812 DIN  |
-
-| VIN / 5V  | WS2812 VCC  |
-
-| GND       | WS2812 GND  |
-
-| GPIO25    | Push Button |
-
-| GND       | Push Button |
-
-
-
-\## Project Description
-
-
+## Project Description
 
 This project uses an ESP32 as a Wi-Fi webserver. A phone or laptop connected to the same Wi-Fi network can open the ESP32 webpage and control the WS2812 RGB LED.
 
-
-
 The project is useful for learning ESP32 Wi-Fi, embedded webserver design, OTA update, persistent storage, and IoT-style device control.
 
-
-
-\## Default Setup Mode
-
-
+## Default Setup Mode
 
 When Wi-Fi is not configured, ESP32 starts setup mode.
 
-
-
 ```text
-
-SSID: ESP32\_LED\_SETUP
-
+SSID: ESP32_LED_SETUP
 Page: 192.168.4.1
-
-```
-
-
-
-\## Important Note
-
-
-
-This project uses local HTTP communication. Do not expose the ESP32 directly to the internet.
-
-
-
-\## Author
-
-
-
-Rohit Patil
-
-
-<img width="645" height="2200" alt="webpage-ui png" src="https://github.com/user-attachments/assets/5de86e5c-c8be-4f2b-8bc0-2951f1876bdf" />
-
