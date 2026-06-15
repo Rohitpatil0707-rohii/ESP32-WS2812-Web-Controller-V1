@@ -1,4 +1,4 @@
-# ESP32 WS2812 Web LED Controller V1
+# ESP32 WS2812 Web LED Controller V.1
 
 A local Wi-Fi based ESP32 LED controller for WS2812 RGB LEDs using a responsive webpage interface.
 
