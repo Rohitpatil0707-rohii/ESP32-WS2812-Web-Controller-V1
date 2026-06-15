@@ -119,4 +119,5 @@ This project uses local HTTP communication. Do not expose the ESP32 directly to 
 Rohit Patil
 
 
+<img width="645" height="2200" alt="webpage-ui png" src="https://github.com/user-attachments/assets/5de86e5c-c8be-4f2b-8bc0-2951f1876bdf" />
 
